@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap'); /*ALEGREYA SC TITRES*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Gupter:wght@400;500;700&display=swap'); /*GUPTER TEXTE */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Charm:wght@400;700&family=Gupter:wght@400;500;700&display=swap'); /*charm citations*/
+
+body {
+
+    font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    max-width: 95%;
+    min-height: 100vh;
+    margin-left: 40px;
+    font-size: x-large;
+text-align: justify;
+padding: 40px, 60px;
+
+
+}
+
+/*RESTE À FAIRE, IMAGE HEADER, COLONNE TEXTE TRAD, ET NOTES MARGINALES.*/
+
+/*footer {
+
+    background-color: rgb(38, 6, 124) ;
+    min-height: 15vh;
+    width: 100%;
+    } /*le footer apparaissait en haut.. à cause de absolute / relative ??*/
+/*là ca prend le texte il faut donc utiliser un sudo ::*/
+
+ /*ce n'est pas du blur que je cherche mais la transparence de l'image}
+
+/*
+.background-image {
+
+
+position:relative;
+width: 100%;
+height: 100vh; 
+overflow: hidden;
+z-index: -1;
+
+}
+
+/*le résultat est pas mal, mais tout de même faudrait le texte au premier plan*/
+
+/*.background-image {**/
+
+   /* background-image: url(https://fr.zenit.org/wp-content/uploads/sites/4/2024/02/en-la-actualidad-hablamos-de-productos-graficos-creados-por-el-hombre-con-la-ayuda-de-herramientas-tecnologicamente-avanzadas-01.jpeg);
+background-blend-mode: overlay;
+   background-color: rgba(255, 255, 255, 0.801);
+   background-repeat: repeat-y;
+   background-size: cover;
+   width: 100%;
+   height: 100vh;
+color: black;
+overflow: auto;
+
+/*
+.backgroundimg {
+
+background-image: url(https://fr.zenit.org/wp-content/uploads/sites/4/2024/02/en-la-actualidad-hablamos-de-productos-graficos-creados-por-el-hombre-con-la-ayuda-de-herramientas-tecnologicamente-avanzadas-01.jpeg);
+background-attachment: fixed;
+opacity: 0.5;
+height: 100vh;*/
+
+/*en filigrane une image de michael ange avec un robot de l'autre côté*/
+
+h1 {
+
+    font-family: "Alegreya SC", serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+
+h2 {
+    font-family: "Alegreya SC", serif;
+    font-weight: 350;
+    font-style: normal;
+    border: 2px solid black;
+   text-align: center;
+}
+
+h3 {
+
+    font-family: "Alegreya SC", serif;
+    font-weight: 150;
+    font-style: normal;
+   
+}
+
+p { font-family: "Gupter", serif;
+    font-weight: 400;
+    font-style: normal;
+font-size: x-large;
+
+} /*j'ai mis position relative et z-index: 3; ça n'a rien changé*/
+
+.pcit {
+
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.paragrapheContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+    gap: 20px;
+
+}
+
+paragrapheContainer p {
+    margin: 0; /* Supprime les marges par défaut du paragraphe */
+    padding: 10px; /* Ajoute un padding pour éviter que le texte ne touche les bords */
+    border: 1px solid #ccc; /* Ajoute une bordure pour visualiser les colonnes */
+  }
+/*ça marche, c'est super !*/
+
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.colonnes {
+column-count: 2;
+column-gap: 40px;
+padding: auto;
+} /* c'est correct mais il faudrait que cela fonctionne en colonnes séparées et non de gauche à droite, oui c'est essentiel si je veux faire comparer l'anglais et la traduction française
+mais ai-je séparé en 2 paragraphe déjà ??* j'ai ajouté des p mais la colonne disparaît... une div au dessus ? ok à présent, fallait juste mettre le ul en dessous du paragraphe, comme j'en avais mis deux p au départ à l'intérieur de ul...RAPPEL JE NE PEUX UTILISER CES CLASS AVEC LES PARAGRAPHES, CAR LES LIGNES NE SE COMPORTENT PAS COMME DES PARAGRAPHES !*/
+
+li {
+list-style-type: square;
+
+}
+
+aside {
+
+float: right;
+width: 15vh;
+
+}
+/*
+
+.BackgroundImageRelative {
+
+    background-color: aqua;
+    
+    background-image: url(https://fr.zenit.org/wp-content/uploads/sites/4/2024/02/en-la-actualidad-hablamos-de-productos-graficos-creados-por-el-hombre-con-la-ayuda-de-herramientas-tecnologicamente-avanzadas-01.jpeg);
+
+   height: 100vh;
+   width: 100%;
+   background-clip: padding-box;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: repeat;
+    position: absolute;    
+    z-index: -2; 
+    
+    -webkit-text-fill-color: black;
+    -webkit-font-smoothing: antialiased;
+}
+.absolutetxt {
+position: relative;
+z-index: 5;
+opacity: (70%); }
